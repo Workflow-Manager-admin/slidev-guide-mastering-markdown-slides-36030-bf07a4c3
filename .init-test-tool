@@ -1,0 +1,4 @@
+{
+    "command": "npm run build",
+    "working_directory": "/home/kavia/workspace/code-generation/slidev-guide-mastering-markdown-slides-36030-bf07a4c3/slidev_guide"
+}
