@@ -1,0 +1,4 @@
+#!/bin/bash
+# Dummy linter script to satisfy external build process.
+echo "No linting necessary for Slidev project."
+exit 0
