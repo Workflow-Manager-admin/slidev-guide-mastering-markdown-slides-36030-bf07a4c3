@@ -1,4 +1,0 @@
-#!/usr/bin/env node
-// Dummy linter script to satisfy external build process.
-console.log('No linting necessary for Slidev project.');
-process.exit(0);
