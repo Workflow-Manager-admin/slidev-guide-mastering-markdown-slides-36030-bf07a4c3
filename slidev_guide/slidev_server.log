@@ -2,23 +2,28 @@
 > dev
 > slidev --open --remote --force --port 3000
 
+/home/kavia/workspace/code-generation/slidev-guide-mastering-markdown-slides-36030-bf07a4c3/slidev_guide/node_modules/yaml/dist/compose/composer.js:70
+                this.errors.push(new errors.YAMLParseError(pos, code, message));
+                                 ^
 
+YAMLParseError: Nested mappings are not allowed in compact mappings at line 1, column 8:
 
-  ●■▲
-  Slidev  v51.5.0 
+title: Slidev Guide: Mastering Markdown Slides
+       ^
 
-  theme       @slidev/theme-seriph
-  css engine  unocss
-  entry       /home/kavia/workspace/code-generation/slidev-guide-mastering-markdown-slides-36030-bf07a4c3/slidev_guide/slides.md
+    at Composer.onError (/home/kavia/workspace/code-generation/slidev-guide-mastering-markdown-slides-36030-bf07a4c3/slidev_guide/node_modules/yaml/dist/compose/composer.js:70:34)
+    at Object.resolveBlockMap (/home/kavia/workspace/code-generation/slidev-guide-mastering-markdown-slides-36030-bf07a4c3/slidev_guide/node_modules/yaml/dist/compose/resolve-block-map.js:78:21)
+    at resolveCollection (/home/kavia/workspace/code-generation/slidev-guide-mastering-markdown-slides-36030-bf07a4c3/slidev_guide/node_modules/yaml/dist/compose/compose-collection.js:13:27)
+    at Object.composeCollection (/home/kavia/workspace/code-generation/slidev-guide-mastering-markdown-slides-36030-bf07a4c3/slidev_guide/node_modules/yaml/dist/compose/compose-collection.js:59:16)
+    at Object.composeNode (/home/kavia/workspace/code-generation/slidev-guide-mastering-markdown-slides-36030-bf07a4c3/slidev_guide/node_modules/yaml/dist/compose/compose-node.js:33:38)
+    at Object.composeDoc (/home/kavia/workspace/code-generation/slidev-guide-mastering-markdown-slides-36030-bf07a4c3/slidev_guide/node_modules/yaml/dist/compose/compose-doc.js:35:23)
+    at Composer.next (/home/kavia/workspace/code-generation/slidev-guide-mastering-markdown-slides-36030-bf07a4c3/slidev_guide/node_modules/yaml/dist/compose/composer.js:150:40)
+    at next (<anonymous>)
+    at Composer.compose (/home/kavia/workspace/code-generation/slidev-guide-mastering-markdown-slides-36030-bf07a4c3/slidev_guide/node_modules/yaml/dist/compose/composer.js:132:25)
+    at compose.next (<anonymous>) {
+  code: 'BLOCK_AS_IMPLICIT_KEY',
+  pos: [ 7, 8 ],
+  linePos: [ { line: 1, col: 8 }, { line: 1, col: 9 } ]
+}
 
-  public slide show   > http://localhost:3000/
-  presenter mode      > http://localhost:3000/presenter/
-  slides overview     > http://localhost:3000/overview/
-  export slides       > http://localhost:3000/export/
-  remote control      > http://172.17.0.2:3000/entry/
-
-  shortcuts           > restart | open | edit | quit | qrcode
-Error: spawn xdg-open ENOENT
-    at ChildProcess._handle.onexit (node:internal/child_process:284:19)
-    at onErrorNT (node:internal/child_process:477:16)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+Node.js v18.19.1
